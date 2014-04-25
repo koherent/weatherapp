@@ -8,9 +8,7 @@ public class ListModel
 	private  String WeatherLabel="";
 	private  String MinTemp="";
 	private  String MaxTemp="";
-	private  String CompanyName="";
 	private  String Image; 
-	private  String Url="";
 	
 	/*********** Set Methods ******************/
 	
@@ -39,20 +37,12 @@ public class ListModel
 		this.MaxTemp = MaxTemp;
 	}
 	
-	public void setCompanyName(String CompanyName)
-	{
-		this.CompanyName = CompanyName;
-	}
 	
 	public void setImage(String Image)
 	{
 		this.Image = Image;
 	}
 	
-	public void setUrl(String Url)
-	{
-		this.Url = Url;
-	}
 	
 	/*********** Get Methods ****************/
 	public String getWeatherLabel()
@@ -80,18 +70,9 @@ public class ListModel
 		return this.Date;
 	}
 	
-	public String getCompanyName()
-	{
-		return this.CompanyName;
-	}
-	
 	public String getImage()
 	{
 		return this.Image;
 	}
 
-	public String getUrl()
-	{
-		return this.Url;
-	}	
 }

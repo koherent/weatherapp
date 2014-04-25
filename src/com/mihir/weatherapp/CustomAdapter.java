@@ -109,18 +109,6 @@ public class CustomAdapter extends BaseAdapter   implements OnClickListener
         	/***** Get each Model object from Arraylist ********/
 	        tempValues=null;
 	        tempValues = (ListModel) data.get(position);
-	        String text = "<html><body style=\"text-align:justify\"> %s </body></Html>";
-	        String data =tempValues.getUrl();
-	        
-	        if(data.length()>150){
-	        	data = data.substring(0,150);
-	        }
-	        if(null!=data && data.length() > 0 ){
-	            int endIndex = data.lastIndexOf(" ");
-	           if(endIndex != -1)  {
-	               data = data.substring(0, endIndex);
-	       }
-	       }
 	        
 	   
 	        /************  Set Model values in Holder elements ***********/
